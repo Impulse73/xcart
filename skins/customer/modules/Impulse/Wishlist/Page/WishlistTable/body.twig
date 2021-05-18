@@ -1,0 +1,31 @@
+{% for product in this.getProducts() %}
+<div class="product-item">
+    <div class="product-image">
+        <a target="_blank"
+           href="{{ url('product', '', {'product_id': product.product_id}) }}"
+           class="product-thumbnail">
+               {{ widget('\\XLite\\View\\Image',
+                  image=product.getProductInfo().getImage(),
+                  maxWidth='250',
+                  maxHeight='250',
+                  alt=product.name,
+                  className='photo') }}
+        </a>
+    </div>
+    <div class="product-info">
+        <h4>{{product.getProductInfo().name}}</h4>
+        <h4 class="price">${{product.getProductInfo().price}}</h4>
+    </div>
+        <div class="product-btn-wishlist">
+            <a
+                href="{{ url('wishlist', 'delete', {'product_id': product.product_id}) }}"
+                id="{{product.product_id}}"
+                class="regular-button rmv-from-wishlist"
+            >{{t('Remove')}}</a>
+            <a
+                href="{{ url('product', '', {'product_id': product.product_id}) }}"
+                class="regular-button"
+            >{{t('Go to product')}}</a>
+    </div>
+</div>
+{% endfor %}
