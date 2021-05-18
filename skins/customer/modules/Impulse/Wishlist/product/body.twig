@@ -1,0 +1,23 @@
+{% if this.isAuth() %}
+<div class="detailed-btn-wishlist">
+    <input class="pr-id"type="hidden" id="{{this.product.product_id}}"/>
+    <button
+        id="btn-add-to-wishlist"
+        type="button"
+        class="regular-button
+        {% if this.isAdded(this.product.product_id) %} hidden {% endif %}
+        "
+    >
+        <span>{{t('Add to Wishlist')}}</span>
+    </button>
+    <button
+        id="btn-remove-from-wishlist"
+        type="button"
+        class="regular-button
+        {% if not this.isAdded(this.product.product_id) %} hidden {% endif %}
+        "
+    >
+        <span>{{t('Remove from Wishlist')}}</span>
+    </button>
+</div>
+{% endif %}
