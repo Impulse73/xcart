@@ -1,0 +1,5 @@
+{% if this.isAuth() %}
+    <div id="header-link-wishlist">
+        <a href="{{this.buildUrl('wishlist')}}">{{ t('Wishlist') }}</a>
+    </div>
+{% endif %}

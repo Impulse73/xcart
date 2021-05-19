@@ -1,0 +1,25 @@
+XLite\Model\LanguageLabel:
+  - name: 'Clear list'
+    translations:
+      - code: en
+        label: 'Clear wishlist'
+      - code: ru
+        label: 'Очистить вишлист'
+  - name: 'Wishlist'
+    translations:
+      - code: en
+        label: 'Wishlist'
+      - code: ru
+        label: 'Список желаний'
+  - name: 'Add to Wishlist'
+    translations:
+      - code: en
+        label: 'Add to Wishlist'
+      - code: ru
+        label: 'Добавить в вишлист'
+  - name: 'Remove from Wishlist'
+    translations:
+      - code: en
+        label: 'Remove from Wishlist'
+      - code: ru
+        label: 'Удалить из вишлиста'

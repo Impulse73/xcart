@@ -1,0 +1,6 @@
+version: 5.4.0.0
+authorName: 'Impulse'
+moduleName: 'Wishlist'
+description: 'Test task'
+minorRequiredCoreVersion: 0
+showSettingsForm: true

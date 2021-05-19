@@ -1,0 +1,17 @@
+{##
+# Add to Cart button template
+#
+# @ListChild (list="itemsList.product.grid.customer.buttons", weight="85")
+# @ListChild (list="itemsList.product.list.customer.info", weight="995")
+# @ListChild (list="itemsList.product.table.customer.columns", weight="45")
+#}
+{% if this.getTarget() == 'wishlist' %}
+    <div>
+        {{ widget('\\XLite\\View\\Button\\Submit',
+            label='Remove',
+            style='remove-btn-wishlist',
+            attributes={'p-id': this.product.getProductId()}
+            )
+         }}
+    </div>
+{% endif %}
