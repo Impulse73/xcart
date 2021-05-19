@@ -1,0 +1,10 @@
+.remove-btn-wishlist {
+    position: absolute;
+    margin: auto;
+    align-items: center;
+    bottom: 130px;
+    left: 30%;
+}
+.box-product{
+    height: 500px;
+}
